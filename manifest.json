@@ -1,0 +1,25 @@
+{
+  "name": "eagle-assets",
+  "id": "eagle-assets-penpot",
+  "version": "1.0.0",
+  "description": "Import assets from Eagle app into Penpot",
+  "main": "plugin.js",
+  "author": "Suleiman Leadbitter",
+  "license": "MIT",
+  "penpot": {
+    "minVersion": "1.18.0",
+    "apiVersion": "1",
+    "entrypoint": {
+      "type": "script",
+      "path": "plugin.js"
+    }
+  },
+  "hosts": ["penpot.app"],
+  "permissions": [
+    "assets:read",
+    "assets:write"
+  ],
+  "budgets": {
+    "maxAssetSize": 10485760
+  }
+}
